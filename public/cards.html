@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Novo Deck</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <header>
+        <h1>Magic The Gathering </h1>
+    </header>
+
+    <h2>Gerar Novo Deck</h2>
+    <form id="createDeckForm">
+        <label for="commanderName">Nome do Comandante:</label>
+        <input type="text" id="commanderName" required>
+        <label for="deckName">Nome do Deck:</label>
+        <input type="text" id="deckName" required>
+        <button type="submit">Criar Deck</button>
+    </form>
+
+    <section class="container-cards">
+        <h2 class="nameComander"></h2>
+        <p class="color"></p>
+        <div class="img-card">
+            <img src="" alt="" class="imgcard">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+    <script>
+        document.getElementById('createDeckForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Deck criado com sucesso!');
+        });
+    </script>
+</body>
+</html>
